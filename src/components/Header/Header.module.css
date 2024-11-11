@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100vh;
+  background: url(../../assets/svg/bg_header.svg);
+  background-size: cover;
+}
+.container {
+  margin: 0 107px;
+}
+.title {
+  margin-top: 216.5px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 154px;
+  width: 506px;
+  gap: 16px;
+}
+
+.h1 {
+  font-size: 38px;
+  color: var(--primary-color);
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.p {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
