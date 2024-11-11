@@ -1,0 +1,21 @@
+.navbar {
+  height: 112px;
+  width: 600px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 64px;
+  color: var(--third-text-color);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100%;
+}
+
+.list ul:hover {
+  background: url(../../assets/svg/hover_nav.svg);
+  background-size: cover;
+  color: var(--primary-text-color);
+}
