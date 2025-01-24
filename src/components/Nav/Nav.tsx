@@ -36,7 +36,7 @@ function Nav() {
               <a
                 href='#skills'
                 className={`${styles.link} ${
-                  activeLink === '#skills' ? styles.acquainted : ''
+                  activeLink === '#skills' ? styles.active : ''
                 }`}
                 onClick={() => {
                   handleLinkClick('#skills');
@@ -49,7 +49,7 @@ function Nav() {
               <a
                 href='#projects'
                 className={`${styles.link} ${
-                  activeLink === 'projects' ? styles.active : ''
+                  activeLink === '#projects' ? styles.active : ''
                 }`}
                 onClick={() => {
                   handleLinkClick('#projects');
@@ -62,7 +62,7 @@ function Nav() {
               <a
                 href='#contact'
                 className={`${styles.link} ${
-                  activeLink === 'contact' ? styles.active : ''
+                  activeLink === '#contact' ? styles.active : ''
                 }`}
                 onClick={() => {
                   handleLinkClick('#contact');
