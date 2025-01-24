@@ -1,32 +1,37 @@
 .wrapper {
   height: 100vh;
-  background: url(../../assets/svg/bg_header.svg);
-  background-size: cover;
-}
-.container {
-  margin: 0 107px;
-}
-.title {
-  margin-top: 216.5px;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 154px;
-  width: 506px;
-  gap: 16px;
 }
 
-.h1 {
-  font-size: 38px;
-  color: var(--primary-color);
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  text-transform: uppercase;
-  font-weight: 900;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
 }
+
 .p {
-  color: white;
+  color: var(--title-color);
   font-size: 24px;
   font-weight: 700;
+}
+.downloadButton {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.downloadButton:hover {
+  background-color: var(--hover-links-color);
+}
+
+.downloadButton:active {
+  background-color: var(--active-links-color);
 }
