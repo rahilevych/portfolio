@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
+:root {
+  --bg-color: linear-gradient(180deg, #1a1a1a, #2a2a2a);
+  --bg-card-color: #1a1a1a;
+  --text-color: #eaeaea;
+  --nav-color: #333333;
+  --title-color: #8b5cf6;
+  --links-color: #8b5cf6;
+  --hover-links-color: #a780ff;
+  --active-links-color: #736f90;
+  --dots-color: #8b5cf6;
+  --button-color: #8b5cf6;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inherit;
+  background: var(--bg-color);
+}
+.container {
+  width: 70%;
+  height: 100%;
   margin: 0 auto;
-  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--text-color);
+  text-transform: uppercase;
   text-align: center;
+  width: 100%;
+
+  margin-top: 100px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title-color);
+
+  text-align: center;
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 20px 0;
+  color: var(--title-color);
 }
