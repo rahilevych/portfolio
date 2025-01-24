@@ -1,20 +1,22 @@
-import React from 'react';
-import github from '../../assets/svg/github.svg';
-import linkedin from '../../assets/svg/linkedin.svg';
+import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 import styles from './Social.module.css';
+
+import IconComponent from '../IconComponent/IconComponent';
 function Social() {
   return (
     <li className={styles.list}>
       <ul>
-        <a href='https://github.com/rahilevych'>
-          <img src={github} alt='' />
-        </a>
+        <IconComponent
+          icon={faGithubAlt}
+          link='https://github.com/rahilevych'
+        />
       </ul>
       <ul>
-        <a href='https://www.linkedin.com/in/alona-rahilevych/'>
-          {' '}
-          <img src={linkedin} alt='' />
-        </a>
+        <IconComponent
+          icon={faLinkedinIn}
+          link='https://www.linkedin.com/in/alona-rahilevych/'
+        />
       </ul>
     </li>
   );
