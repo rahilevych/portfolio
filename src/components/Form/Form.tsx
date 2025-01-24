@@ -73,7 +73,8 @@ const Form: React.FC = () => {
         value={formData.message}
         onChange={handleChange}
         required
-        className={styles.textarea}></textarea>
+        className={styles.textarea}
+      />
       <button type='submit' className={styles.button}>
         Send Message
       </button>
