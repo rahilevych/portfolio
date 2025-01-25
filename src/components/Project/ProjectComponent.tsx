@@ -3,7 +3,7 @@ import { Project } from '../../types/Project';
 import styles from './ProjectComponent.module.css';
 import IconComponent from '../IconComponent/IconComponent';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface Props {
   project: Project;

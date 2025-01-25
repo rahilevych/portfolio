@@ -53,7 +53,7 @@ function Projects() {
           <h2>Projects</h2>
           <div className={styles.projects_grid}>
             {projects.map((project, index) => (
-              <ProjectComponent project={project} />
+              <ProjectComponent project={project} key={index} />
             ))}
           </div>
         </div>
