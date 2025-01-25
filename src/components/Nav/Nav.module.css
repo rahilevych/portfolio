@@ -69,9 +69,6 @@
 }
 
 @media (max-width: 768px) {
-  .wrapper {
-    background-color: var(--bg-color);
-  }
   .navbar {
     position: relative;
   }
