@@ -28,7 +28,7 @@ function ProjectComponent(props: Props) {
           <div className={styles.full_card}>
             <img src={props.project.img} alt='' />
             <h3 className={styles.h3}>{props.project.title}</h3>
-            <div>{props.project.desc}</div>
+            <div className={styles.desc}>{props.project.desc}</div>
             <div className={styles.technologies}>
               {props.project.technologies.map((tech) => (
                 <div className={styles.tech}>{tech}</div>

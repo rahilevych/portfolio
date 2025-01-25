@@ -47,7 +47,7 @@ function Projects() {
   ];
 
   return (
-    <div className={styles.wrapper} id='projects'>
+    <div className='wrapper' id='projects'>
       <div className='container'>
         <div className={styles.projects}>
           <h2>Projects</h2>

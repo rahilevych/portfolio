@@ -2,16 +2,36 @@ import { useState } from 'react';
 import styles from './Nav.module.css';
 function Nav() {
   const [activeLink, setActiveLink] = useState('#home');
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   const handleLinkClick = (id: string) => {
     setActiveLink(id);
+    setIsMenuOpened(false);
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className='wrapper'>
       <div className='container'>
         <div className={styles.navbar}>
-          <li className={styles.list}>
+          <div
+            className={`${styles.burger} ${isMenuOpened ? styles.opened : ''}`}
+            onClick={() => setIsMenuOpened(!isMenuOpened)}>
+            <span
+              className={`${styles.burgerLine} ${
+                isMenuOpened ? styles.lineTop : ''
+              }`}></span>
+            <span
+              className={`${styles.burgerLine} ${
+                isMenuOpened ? styles.lineMiddle : ''
+              }`}></span>
+            <span
+              className={`${styles.burgerLine} ${
+                isMenuOpened ? styles.lineBottom : ''
+              }`}></span>
+          </div>
+
+          <li
+            className={`${styles.list} ${!isMenuOpened ? styles.closed : ''}`}>
             <ul>
               <a
                 href='#home'

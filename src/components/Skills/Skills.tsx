@@ -31,7 +31,7 @@ const Skills = () => {
     { icon: <SiNpm color='#CB3837' />, name: 'NPM' },
   ];
   return (
-    <div className={styles.wrapper} id='skills'>
+    <div className='wrapper' id='skills'>
       <div className='container'>
         <div className={styles.skills}>
           <h2>Skills</h2>

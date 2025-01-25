@@ -1,7 +1,3 @@
-.wrapper {
-  height: 100vh;
-}
-
 .about {
   width: 100%;
   height: 100%;
@@ -40,4 +36,23 @@
 .description {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 50px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .text {
+    padding: 40px;
+    padding-bottom: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  .text {
+    padding: 20px;
+    font-size: 20px;
+  }
 }

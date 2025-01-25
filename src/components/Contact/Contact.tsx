@@ -3,7 +3,7 @@ import Form from '../Form/Form';
 
 function Contact() {
   return (
-    <div className={styles.wrapper} id='contact'>
+    <div className='wrapper' id='contact'>
       <div className='container'>
         <div className={styles.contact}>
           <h2>Get in Touch</h2>
