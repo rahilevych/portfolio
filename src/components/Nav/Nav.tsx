@@ -10,7 +10,7 @@ function Nav() {
   };
 
   return (
-    <div className='wrapper'>
+    <div className={styles.wrapper}>
       <div className='container'>
         <div className={styles.navbar}>
           <div
