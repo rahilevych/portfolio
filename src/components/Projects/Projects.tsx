@@ -34,7 +34,7 @@ function Projects() {
       img: '/img/instclon.png',
 
       git: 'https://github.com/rahilevych/instclone',
-      link: 'https://instclone-client.onrender.com/',
+      link: 'https://instclone-client.onrender.com',
     },
     {
       title: 'Pictures',
