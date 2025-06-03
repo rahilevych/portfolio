@@ -20,7 +20,7 @@ function Projects() {
       link: 'https://bookery-sbic.vercel.app/',
     },
     {
-      title: 'Instclone',
+      title: 'Moments',
       technologies: [
         'HTML5',
         'TypeScript',
@@ -33,8 +33,8 @@ function Projects() {
       desc: 'A simplified version of Instagram built with the MERN stack and TypeScript.',
       img: '/img/instclon.png',
 
-      git: 'https://github.com/rahilevych/instclone',
-      link: 'https://instclone-client.onrender.com',
+      git: 'https://github.com/rahilevych/moments',
+      link: 'https://moments-client1.onrender.com',
     },
     {
       title: 'Pictures',
