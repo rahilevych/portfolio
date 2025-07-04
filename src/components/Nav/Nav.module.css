@@ -6,7 +6,9 @@
   background: var(--nav-color);
   z-index: 1000;
 }
-
+.container {
+  margin: 0 auto;
+}
 .navbar {
   position: relative;
   display: flex;

@@ -20,9 +20,9 @@
 }
 
 .photo img {
-  width: 350px;
-  height: calc(350px * 4 / 3);
-  object-fit: cover;
+  width: 300px;
+  height: calc(300px * 4 / 3);
+  object-fit: contain;
   border-radius: 5px;
 }
 

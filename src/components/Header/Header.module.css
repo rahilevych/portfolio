@@ -16,6 +16,7 @@
   color: var(--title-color);
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 }
 .downloadButton {
   display: inline-block;

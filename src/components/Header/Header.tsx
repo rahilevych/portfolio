@@ -4,7 +4,7 @@ import Social from '../Social/Social';
 
 const Header = () => {
   return (
-    <div className='wrapper' id='home'>
+    <div id='home' className={`wrapper ${styles.wrapper}`}>
       <div className='container'>
         <div className={styles.header}>
           <h1>Alona Rahilevych</h1>

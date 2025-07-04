@@ -11,7 +11,7 @@ function Nav() {
 
   return (
     <div className={styles.wrapper}>
-      <div className='container'>
+      <div className={`container ${styles.container}`}>
         <div className={styles.navbar}>
           <div
             className={`${styles.burger} ${isMenuOpened ? styles.opened : ''}`}

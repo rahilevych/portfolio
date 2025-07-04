@@ -4,6 +4,7 @@ import styles from './ProjectComponent.module.css';
 import IconComponent from '../IconComponent/IconComponent';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons/faGlobe';
 import { useState } from 'react';
+import { MdClose } from 'react-icons/md';
 
 interface Props {
   project: Project;
@@ -23,7 +24,7 @@ function ProjectComponent(props: Props) {
             onClick={() => {
               handleCardClick();
             }}>
-            X
+            <MdClose size={24} />
           </button>
           <div className={styles.full_card}>
             <img src={props.project.img} alt='' />
