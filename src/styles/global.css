@@ -15,70 +15,9 @@ body {
   font-family: inherit;
   background: var(--color-bg);
 }
-.container {
-  width: 70%;
-  height: 100%;
-}
-.wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--text-color);
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-
-  margin-top: 100px;
-}
 
 h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--title-color);
-  text-align: center;
   width: 100%;
-}
-
-h3 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin: 20px 0;
-  color: var(--title-color);
-}
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-    height: 100%;
-    margin: 0.5rem auto;
-  }
-
-  h1 {
-    margin-top: 200px;
-  }
-  h2 {
-    margin-top: 50px;
-  }
-}
-@media (max-width: 450px) {
-  .container {
-    width: 98%;
-  }
-  h2 {
-    margin-top: 25px;
-    font-size: 1.75rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
-  h1,
-  h2,
-  h3 {
-    padding: 5px;
-    text-align: center;
-  }
 }
