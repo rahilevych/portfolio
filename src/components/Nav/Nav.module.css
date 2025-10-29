@@ -1,104 +1,43 @@
-.wrapper {
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  background-size: cover;
-  background: var(--nav-color);
-  z-index: 1000;
-}
-.container {
-  margin: 0 auto;
-}
-.navbar {
-  position: relative;
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-}
-.list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 64px;
-  height: 100%;
-  transform: translateX(0);
-  transition: all 0.5s ease-in-out;
-}
-
-.link {
-  color: var(--links-color);
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-  transition: 0.5s ease all;
-  text-decoration: none;
-}
-.link:hover {
-  color: var(--hover-links-color);
-  text-decoration: underline;
-}
-.active {
-  color: var(--active-links-color);
-  text-decoration: underline;
-}
-
-.burger {
-  display: none;
   flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  width: 30px;
-  height: 25px;
+  gap: 1.2rem;
+}
 
+.nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.burgerLine {
-  height: 3px;
-  background-color: var(--links-color);
-  border-radius: 5px;
-}
-.lineTop {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.lineMiddle {
-  opacity: 0;
+.nav a .line {
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: var(--color-text);
+  margin-right: 10px;
+  transition: width 0.4s ease;
 }
 
-.lineBottom {
-  transform: translateY(-8px) rotate(-45deg);
+.nav a:hover .line {
+  width: 22px;
+  background-color: var(--color-accent);
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    position: relative;
-  }
-
-  .burger {
-    position: absolute;
-    z-index: 13;
-    right: 5px;
-
-    display: flex;
-  }
-
-  .list {
-    position: absolute;
-    top: 0px;
-    right: -20px;
-    flex-direction: column;
-    background-color: var(--text-color);
-    padding: 60px 20px 20px 20px;
-    gap: 10px;
-    width: 230px;
-    height: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-  }
-  .closed {
-    transform: translateX(200%);
-    transition: all 0.5s ease-in-out;
-  }
+.nav a.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+.nav a.active .line {
+  width: 35px;
+  background-color: var(--color-accent);
 }
