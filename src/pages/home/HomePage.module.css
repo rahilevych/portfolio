@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+.main {
+  margin-left: 320px;
+  width: calc(100% - 320px);
+  padding: 3rem;
+}
+.section {
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 320px;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--color-accent);
+}
