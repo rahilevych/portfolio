@@ -17,6 +17,7 @@ export const Nav = () => {
               spy={true}
               offset={-50}
               activeClass={styles.active}
+              isDynamic={true}
             >
               <span className={styles.line}></span>
               {link.title}
