@@ -1,0 +1,15 @@
+:root {
+  /* Main colors */
+  --color-bg: #0e1117;
+  --color-bg-second: #161b22;
+  --color-text: #e6edf3;
+  --color-text-second: #9da5b4;
+
+  /* Accent colors */
+  --color-accent: #42e0d0;
+  --color-accent-hover: #35c9bc;
+  --color-accent-light: #6df2e4;
+
+  /* Blocks size */
+  --hight-header: 70px;
+}
