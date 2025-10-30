@@ -2,4 +2,5 @@
   width: 100%;
   text-align: right;
   color: var(--color-text-second);
+  text-transform: uppercase;
 }
