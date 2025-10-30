@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-bg-second);
+  width: 7rem;
+  height: 7rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--color-box-shadow);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px var(--color-accent-hover);
+}
+.card:hover .icon,
+.card:hover p {
+  color: var(--color-accent-hover);
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  text-align: center;
+  transition: all 0.3s ease;
+}
