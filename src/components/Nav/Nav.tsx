@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import { linksList } from '../../constants/constants';
+import { linksList } from '../../constants/constants.tsx';
 import styles from './Nav.module.css';
 
 export const Nav = () => {
