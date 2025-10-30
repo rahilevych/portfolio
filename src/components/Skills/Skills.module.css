@@ -1,3 +1,5 @@
 .skills {
-  gap: 5rem;
+  gap: 3rem;
+  justify-content: center;
+  align-items: start;
 }
