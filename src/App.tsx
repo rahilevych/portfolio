@@ -1,23 +1,17 @@
-import './App.css';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Nav from './components/Nav/Nav';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
+import { BrowserRouter } from 'react-router-dom';
+import './styles/variables.css';
+import './styles/global.css';
+import { ToastContainer } from 'react-toastify';
+import { AppRoutes } from './AppRoutes';
+import Cursor from './components/сursor/Cursor';
 
 function App() {
   return (
-    <>
-      <Nav />
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Cursor />
+      <AppRoutes />
+      <ToastContainer />
+    </BrowserRouter>
   );
 }
 

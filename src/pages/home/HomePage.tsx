@@ -2,19 +2,27 @@ import { Element } from 'react-scroll';
 import About from '../../components/About/About';
 import Contact from '../../components/Contact/Contact';
 import Projects from '../../components/Projects/Projects';
-import Skills from '../../components/Skills/Skills';
+
 import styles from './HomePage.module.css';
 import Social from '../../components/Social/Social';
 import { Nav } from '../../components/nav/Nav';
 import { Description } from '../../components/description/Description';
+import { Skills } from '../../components/Skills/Skills';
+import { useIsMobile } from '../../hooks/useIsMobile';
 export const HomePage = () => {
+  const isMobile = useIsMobile();
   return (
     <div className={styles.container}>
-      <aside className={styles.sidebar}>
-        <Description />
-        <Nav />
-        <Social />
-      </aside>
+      {isMobile ? (
+        <></>
+      ) : (
+        <aside className={styles.sidebar}>
+          <Description />
+          <Nav />
+          <Social />
+        </aside>
+      )}
+
       <main className={styles.main}>
         <Element name='about' className={styles.section}>
           <About />
