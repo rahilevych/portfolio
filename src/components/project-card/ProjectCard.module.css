@@ -71,3 +71,30 @@
   background-color: var(--color-bg-second);
   box-shadow: 0 0 4px var(--color-accent);
 }
+@media (max-width: 1440px) {
+  .info p {
+    font-size: 14px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .card {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .info p {
+    font-size: 12px;
+  }
+
+  .tech {
+    font-size: 8px;
+  }
+
+  .tech li {
+    padding: 0.25rem 0.4rem;
+  }
+}
