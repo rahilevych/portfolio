@@ -33,3 +33,37 @@
   text-align: center;
   transition: all 0.3s ease;
 }
+
+@media (max-width: 1024px) {
+  .card {
+    width: 6rem;
+    height: 6rem;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 620px) {
+  .card {
+    width: 5rem;
+    height: 5rem;
+  }
+  .icon {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    width: 4rem;
+    height: 4rem;
+  }
+  .icon {
+    font-size: 0.75rem;
+  }
+  .card p {
+    font-size: 0.5rem;
+  }
+}

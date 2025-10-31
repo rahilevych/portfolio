@@ -1,9 +1,13 @@
-.category h3 {
+.category {
+  width: 100%;
+}
+.title {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
   color: var(--color-text);
   letter-spacing: 1px;
-  text-align: start;
+  text-align: center;
+  width: 100%;
 }
 
 .grid {
@@ -12,4 +16,15 @@
   justify-content: start;
   align-items: start;
   gap: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .grid {
+    gap: 1.5rem;
+  }
 }

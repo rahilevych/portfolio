@@ -9,7 +9,7 @@ export const SkillSection = ({
   items: SkillItem[];
 }) => (
   <div className={styles.category}>
-    <h3>{title}</h3>
+    <h3 className={styles.title}>{title}</h3>
     <div className={styles.grid}>
       {items.map((skill) => (
         <SkillCard key={skill.name} icon={skill.icon} name={skill.name} />
