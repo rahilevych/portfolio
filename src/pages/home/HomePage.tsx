@@ -5,7 +5,7 @@ import Projects from '../../components/Projects/Projects';
 
 import styles from './HomePage.module.css';
 import Social from '../../components/Social/Social';
-import { Nav } from '../../components/nav/Nav';
+import { Nav } from '../../components/Nav/Nav';
 import { Description } from '../../components/description/Description';
 import { Skills } from '../../components/Skills/Skills';
 import { useIsMobile } from '../../hooks/useIsMobile';
