@@ -1,21 +1,15 @@
-import styles from './Contact.module.css';
 import Form from '../Form/Form';
-
+import { Title } from '../../ui/title/Title';
+import styles from './Contact.module.css';
 function Contact() {
   return (
-    <div className='wrapper' id='contact'>
-      <div className='container'>
-        <div className={styles.contact}>
-          <h2>Get in Touch</h2>
-          <div className={styles.contact_block}>
-            <div className={styles.text}>
-              Drop me a line. <br /> I would like to hear from you.
-            </div>
-            <Form />
-          </div>
-        </div>
-      </div>
-    </div>
+    <section className={`section ${styles.contact}`}>
+      <Title text='Contact' />
+      <p className={styles.title}>
+        Got a question or porposal, or just want to say hello? Go ahead.
+      </p>
+      <Form />
+    </section>
   );
 }
 

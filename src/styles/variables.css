@@ -1,0 +1,14 @@
+:root {
+  /* Main colors */
+  --color-bg: #0e1117;
+  --color-bg-second: #1b2230;
+  --color-text: #c5c8d0;
+  --color-text-second: #e6edf3;
+  /* Accent colors */
+  --color-accent: #42e0d0;
+  --color-accent-hover: #35c9bc;
+  --color-accent-light: #6df2e4;
+  --color-border: rgba(150, 180, 220, 0.45);
+  --color-box-shadow: rgba(66, 224, 208, 0.1);
+  --color-cursor: rgba(40, 80, 130, 0.25);
+}

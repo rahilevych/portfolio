@@ -1,0 +1,9 @@
+.links {
+  display: flex;
+  gap: 0.5rem;
+}
+.links a {
+  color: var(--color-text);
+  width: fit-content;
+  height: fit-content;
+}

@@ -1,22 +1,21 @@
 import styles from './Projects.module.css';
-
-import ProjectComponent from '../Project/ProjectComponent';
+import { Title } from '../../ui/title/Title';
 import { projects } from '../../constants/projects';
+import { ProjectCard } from '../project-card/ProjectCard';
 
 function Projects() {
   return (
-    <div className='wrapper' id='projects'>
-      <div className='container'>
-        <div className={styles.projects}>
-          <h2>Projects</h2>
-          <div className={styles.projects_grid}>
-            {projects.map((project, index) => (
-              <ProjectComponent project={project} key={index} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
+    <section className={`section ${styles.projects}`}>
+      <Title text='Projects' />
+      <ul className={styles.list}>
+        {projects.map((project, index) => (
+          <li key={index}>
+            {' '}
+            <ProjectCard project={project} />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 

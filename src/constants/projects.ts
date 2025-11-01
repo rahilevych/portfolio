@@ -1,4 +1,13 @@
-export const projects = [
+export interface Project {
+  title: string;
+  technologies: string[];
+  desc: string;
+  img: string;
+  git: string;
+  link: string;
+}
+
+export const projects: Project[] = [
   {
     title: 'Bodhi Balance',
     technologies: [
@@ -7,7 +16,6 @@ export const projects = [
       'MongoDB',
       'Node.js',
       'Express.js',
-      'Socket.IO',
       'React Testing Library',
       'Jest',
     ],
@@ -44,7 +52,7 @@ export const projects = [
       'Jest',
     ],
     desc: 'A simplified version of Instagram built with the MERN stack and TypeScript.',
-    img: '/img/instclon.png',
+    img: '/img/moments.png',
 
     git: 'https://github.com/rahilevych/moments',
     link: 'https://moments-client1.onrender.com',

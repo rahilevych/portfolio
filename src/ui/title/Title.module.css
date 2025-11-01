@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+  text-align: left;
+  color: var(--color-text-second);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+@media (max-width: 425px) {
+  .header {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
