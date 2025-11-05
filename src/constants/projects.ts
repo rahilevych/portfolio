@@ -9,6 +9,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Event Rave',
+    technologies: ['TypeScript', 'React', 'PostgreSQL', 'Nest.js'],
+    desc: 'Event Rave — a full-stack event management web app built with React, TypeScript, Nest.js, and PostgreSQL. It allows users to register, create, search, and manage events with secure authentication (JWT).',
+    img: '/img/event.png',
+    git: 'https://github.com/rahilevych/event-rave',
+    link: 'https://event-rave.vercel.app/',
+  },
+  {
     title: 'Bodhi Balance',
     technologies: [
       'TypeScript',
